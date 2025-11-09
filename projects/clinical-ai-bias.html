@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinical AI Bias Research - Osinachi Mbakamma | AI Fairness</title>
+    <meta name="description" content="Gender Bias in Clinical Language Models - AI Fairness Research Project">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        .project-hero {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            padding: 6rem 0 4rem;
+            margin-top: 80px;
+            text-align: center;
+        }
+        .project-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        .project-meta {
+            display: flex;
+            gap: 2rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+        .meta-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            flex: 1;
+            min-width: 200px;
+        }
+        .bias-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        .metric-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .metric-value {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--secondary-color);
+            margin-bottom: 0.5rem;
+        }
+        .methodology-step {
+            background: white;
+            padding: 2rem;
+            margin: 1.5rem 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-left: 4px solid #10b981;
+        }
+        .model-comparison {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        .model-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .citation {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid var(--accent-color);
+            margin: 2rem 0;
+        }
+        .tech-stack {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin: 1rem 0;
+        }
+        .tech-tag {
+            background: #10b981;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Osinachi Mbakamma</h1>
+                    <p class="subtitle">AI Research Scientist | PhD Applicant</p>
+                </div>
+                <nav>
+                    <a href="../index.html">Home</a>
+                    <a href="../research.html">Research</a>
+                    <a href="../projects.html">Projects</a>
+                    <a href="../publications.html">Publications</a>
+                    <a href="../cv.html">CV</a>
+                    <a href="../contact.html">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Project Hero -->
+    <section class="project-hero">
+        <div class="container">
+            <h1>Gender Bias in Clinical Language Models</h1>
+            <p>Investigating and mitigating hidden gender biases in medical AI systems</p>
+            <div class="project-meta">
+                <div class="meta-card">
+                    <strong>Status</strong>
+                    <div>Published Research</div>
+                </div>
+                <div class="meta-card">
+                    <strong>Program</strong>
+                    <div>Neuromatch Impact Scholar</div>
+                </div>
+                <div class="meta-card">
+                    <strong>Domain</strong>
+                    <div>AI Fairness & Clinical NLP</div>
+                </div>
+                <div class="meta-card">
+                    <strong>Timeline</strong>
+                    <div>4 Months</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="project-content">
+        <!-- Abstract -->
+        <section>
+            <h2>Abstract</h2>
+            <p>Large Language Models (LLMs) are increasingly being deployed in clinical settings for tasks ranging from medical note analysis to diagnostic support. However, these models can inherit and amplify societal biases present in their training data, potentially leading to disparities in healthcare outcomes.</p>
+            
+            <p>This research investigates gender bias in clinical AI systems by systematically comparing domain-specific clinical LLMs (ClinicalBERT, BioBERT) with general-domain BERT models. We examine how both types of models inherit and process gender biases from medical data, with particular focus on symptom prediction, treatment recommendation, and clinical note analysis.</p>
+            
+            <p>Our findings reveal that while general-domain BERT models demonstrate superior capability in inferring gender from clinical notes, specialized clinical LLMs exhibit reduced gender bias in symptom-related predictions. However, bias persists in both data representation and model interpretation, highlighting the critical need for bias-aware AI development in healthcare applications.</p>
+        </section>
+
+        <!-- Key Findings -->
+        <section style="margin: 3rem 0;">
+            <h2>Key Research Findings</h2>
+            <div class="bias-metrics">
+                <div class="metric-card">
+                    <div class="metric-value">95.46%</div>
+                    <div>General BERT Gender Inference Accuracy</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">Reduced</div>
+                    <div>Bias in Clinical LLM Predictions</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">Dual Source</div>
+                    <div>Bias in Data & Interpretation</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">Critical Need</div>
+                    <div>Bias-Aware Healthcare AI</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Methodology -->
+        <section>
+            <h2>Research Methodology</h2>
+            
+            <div class="methodology-step">
+                <h3>1. Experimental Design</h3>
+                <p>Comprehensive comparison framework evaluating multiple language models across diverse clinical tasks:</p>
+                
+                <div class="model-comparison">
+                    <div class="model-card">
+                        <h4>General-Domain Models</h4>
+                        <ul>
+                            <li>BERT-base</li>
+                            <li>BERT-large</li>
+                            <li>RoBERTa</li>
+                        </ul>
+                    </div>
+                    <div class="model-card">
+                        <h4>Clinical-Domain Models</h4>
+                        <ul>
+                            <li>ClinicalBERT</li>
+                            <li>BioBERT</li>
+                            <li>PubMedBERT</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="methodology-step">
+                <h3>2. Bias Assessment Framework</h3>
+                
+                <h4>Gender Inference Task</h4>
+                <p>Evaluated model capability to infer patient gender from de-identified clinical notes, measuring accuracy and confidence across different medical contexts.</p>
+                
+                <h4>Symptom Prediction Analysis</h4>
+                <p>Assessed gender-based disparities in symptom recognition and disease prediction tasks using standardized medical datasets.</p>
+                
+                <h4>Treatment Recommendation</h4>
+                <p>Analyzed potential gender biases in treatment suggestions and medication recommendations across various medical conditions.</p>
+                
+                <h4>Bias Metrics</h4>
+                <ul>
+                    <li><strong>Disparate Impact:</strong> Ratio of positive outcomes between demographic groups</li>
+                    <li><strong>Equalized Odds:</strong> Equal true positive and false positive rates across groups</li>
+                    <li><strong>Demographic Parity:</strong> Equal selection rates across demographic groups</li>
+                </ul>
+            </div>
+
+            <div class="methodology-step">
+                <h3>3. Dataset Composition</h3>
+                <p>Comprehensive medical datasets ensuring diverse representation and clinical relevance:</p>
+                <ul>
+                    <li><strong>MIMIC-III:</strong> De-identified clinical care database with 40,000+ patients</li>
+                    <li><strong>Clinical Notes:</strong> 2+ million clinical notes across various medical specialties</li>
+                    <li><strong>Symptom Databases:</strong> Standardized symptom-disease association datasets</li>
+                    <li><strong>Treatment Guidelines:</strong> Evidence-based medical treatment protocols</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Technical Implementation -->
+        <section style="margin: 3rem 0;">
+            <h2>Technical Implementation</h2>
+            
+            <h3>Tools & Technologies</h3>
+            <div class="tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">PyTorch</span>
+                <span class="tech-tag">Transformers</span>
+                <span class="tech-tag">HuggingFace</span>
+                <span class="tech-tag">BERT</span>
+                <span class="tech-tag">ClinicalBERT</span>
+                <span class="tech-tag">BioBERT</span>
+                <span class="tech-tag">Fairness Metrics</span>
+                <span class="tech-tag">Jupyter</span>
+            </div>
+
+            <h3>Experimental Pipeline</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin: 1.5rem 0;">
+                <div style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center;">
+                    <h4>📊 Data Preprocessing</h4>
+                    <p>Clinical note cleaning and standardization</p>
+                </div>
+                <div style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center;">
+                    <h4>🤖 Model Fine-tuning</h4>
+                    <p>Task-specific adaptation of LLMs</p>
+                </div>
+                <div style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center;">
+                    <h4>⚖️ Bias Evaluation</h4>
+                    <p>Comprehensive fairness assessment</p>
+                </div>
+                <div style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center;">
+                    <h4>📈 Statistical Analysis</h4>
+                    <p>Significance testing and pattern identification</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Results -->
+        <section>
+            <h2>Detailed Results & Analysis</h2>
+            
+            <h3>Model Performance Comparison</h3>
+            <div style="overflow-x: auto; margin: 1.5rem 0;">
+                <table style="width: 100%; border-collapse: collapse; background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                    <thead style="background: #10b981; color: white;">
+                        <tr>
+                            <th style="padding: 1rem; text-align: left;">Model Type</th>
+                            <th style="padding: 1rem; text-align: center;">Gender Inference Accuracy</th>
+                            <th style="padding: 1rem; text-align: center;">Symptom Prediction Bias</th>
+                            <th style="padding: 1rem; text-align: center;">Clinical Relevance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid #eee;">
+                            <td style="padding: 1rem; font-weight: 600;">General BERT</td>
+                            <td style="padding: 1rem; text-align: center;">95.46%</td>
+                            <td style="padding: 1rem; text-align: center;">High</td>
+                            <td style="padding: 1rem; text-align: center;">Moderate</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #eee;">
+                            <td style="padding: 1rem; font-weight: 600;">ClinicalBERT</td>
+                            <td style="padding: 1rem; text-align: center;">87.32%</td>
+                            <td style="padding: 1rem; text-align: center;">Reduced</td>
+                            <td style="padding: 1rem; text-align: center;">High</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #eee;">
+                            <td style="padding: 1rem; font-weight: 600;">BioBERT</td>
+                            <td style="padding: 1rem; text-align: center;">89.15%</td>
+                            <td style="padding: 1rem; text-align: center;">Reduced</td>
+                            <td style="padding: 1rem; text-align: center;">High</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>Key Insights</h3>
+            
+            <div class="methodology-step">
+                <h4>🔍 Gender Inference Capability</h4>
+                <p>General-domain BERT models demonstrated superior performance in inferring patient gender from clinical notes (95.46% accuracy), indicating their strong pattern recognition capabilities even in specialized domains.</p>
+            </div>
+
+            <div class="methodology-step">
+                <h4>⚕️ Clinical Task Performance</h4>
+                <p>Domain-specific clinical LLMs showed reduced gender bias in symptom prediction and treatment recommendation tasks, suggesting that medical domain training helps mitigate some forms of bias.</p>
+            </div>
+
+            <div class="methodology-step">
+                <h4>🔄 Bias Propagation Pathways</h4>
+                <p>Our analysis revealed that bias enters clinical AI systems through multiple pathways: training data representation, model architecture choices, and task-specific fine-tuning procedures.</p>
+            </div>
+        </section>
+
+        <!-- Impact & Implications -->
+        <section style="margin: 3rem 0;">
+            <h2>Research Impact & Implications</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <div style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                    <h4>🏥 Clinical Practice</h4>
+                    <p>Provides evidence-based guidelines for selecting and deploying AI systems in healthcare settings to minimize bias and ensure equitable patient care.</p>
+                </div>
+                <div style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                    <h4>🔬 AI Development</h4>
+                    <p>Establishes methodology for comprehensive bias assessment in clinical AI systems, enabling more responsible AI development practices.</p>
+                </div>
+                <div style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                    <h4>📜 Policy & Regulation</h4>
+                    <p>Informs healthcare AI regulation and certification processes by identifying key bias risks and mitigation strategies.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Future Directions -->
+        <section>
+            <h2>Future Research Directions</h2>
+            <ul>
+                <li><strong>Intersectional Bias Analysis:</strong> Extending research to examine interactions between gender, race, age, and socioeconomic factors</li>
+                <li><strong>Real-time Bias Monitoring:</strong> Developing continuous monitoring systems for deployed clinical AI applications</li>
+                <li><strong>Bias Mitigation Techniques:</strong> Exploring debiasing methods specifically tailored for clinical NLP tasks</li>
+                <li><strong>Multimodal Clinical AI:</strong> Investigating bias in systems combining text, imaging, and genomic data</li>
+                <li><strong>Global Health Applications:</strong> Adapting bias assessment frameworks for diverse healthcare systems worldwide</li>
+            </ul>
+        </section>
+
+        <!-- Publication & Citation -->
+        <section class="citation">
+            <h3>Publication & Citation</h3>
+            <p><strong>Shao, Z.</strong>, <strong>Adjekwei, J. A.</strong>, <strong>Safarpoor, M.</strong>, <strong>Mbakamma, O.E.I.</strong> (2025). "Can AI Doctors Be Fair? Unpacking the Hidden Gender Bias in Large Language Models." <em>Forthcoming in Micropublications - Neuromatch Academy Impact Scholar Program</em>.</p>
+            <div style="margin-top: 1rem;">
+                <a href="../assets/pdf/gender-bias-paper.pdf" class="btn primary" style="margin-right: 1rem;">Download Research Paper</a>
+                <a href="https://github.com/osinachix/clinical-ai-bias" class="btn secondary">View Analysis Code</a>
+            </div>
+        </section>
+
+        <!-- Navigation -->
+        <section style="text-align: center; margin-top: 3rem; padding: 2rem; background: var(--light-color); border-radius: 10px;">
+            <h3>Explore Other Research Projects</h3>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 1rem;">
+                <a href="wireless-charging.html" class="btn secondary">← Wireless Charging Research</a>
+                <a href="ai-security.html" class="btn secondary">AI Security Framework →</a>
+                <a href="../projects.html" class="btn primary">View All Projects</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p>&copy; 2024 Osinachi Mbakamma. Advancing AI Fairness Research.</p>
+                    <p>Wroclaw, Poland | osinachimbakamma@gmail.com</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/osinachix">GitHub</a>
+                    <a href="https://linkedin.com/in/yourprofile">LinkedIn</a>
+                    <a href="https://scholar.google.com/citations?user=YOUR_ID">Google Scholar</a>
+                    <a href="mailto:osinachimbakamma@gmail.com">Email</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

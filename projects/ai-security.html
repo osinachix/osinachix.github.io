@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Security Framework - Osinachi Mbakamma | Cybersecurity Research</title>
+    <meta name="description" content="Secure AI Deployment Framework - Cybersecurity and Adversarial Robustness Research">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        .project-hero {
+            background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 100%);
+            color: white;
+            padding: 6rem 0 4rem;
+            margin-top: 80px;
+            text-align: center;
+        }
+        .project-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        .project-meta {
+            display: flex;
+            gap: 2rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+        .meta-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            flex: 1;
+            min-width: 200px;
+        }
+        .security-components {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        .component-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .threat-matrix {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        .threat-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-left: 4px solid #8b5cf6;
+        }
+        .methodology-step {
+            background: white;
+            padding: 2rem;
+            margin: 1.5rem 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-left: 4px solid #8b5cf6;
+        }
+        .tech-stack {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin: 1rem 0;
+        }
+        .tech-tag {
+            background: #8b5cf6;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        .implementation-phase {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 10px;
+            border-left: 4px solid var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Osinachi Mbakamma</h1>
+                    <p class="subtitle">AI Research Scientist | PhD Applicant</p>
+                </div>
+                <nav>
+                    <a href="../index.html">Home</a>
+                    <a href="../research.html">Research</a>
+                    <a href="../projects.html">Projects</a>
+                    <a href="../publications.html">Publications</a>
+                    <a href="../cv.html">CV</a>
+                    <a href="../contact.html">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Project Hero -->
+    <section class="project-hero">
+        <div class="container">
+            <h1>Secure AI Deployment Framework</h1>
+            <p>Comprehensive security framework for robust and trustworthy AI system deployment</p>
+            <div class="project-meta">
+                <div class="meta-card">
+                    <strong>Status</strong>
+                    <div>Active Development</div>
+                </div>
+                <div class="meta-card">
+                    <strong>Focus</strong>
+                    <div>AI Security & Infrastructure</div>
+                </div>
+                <div class="meta-card">
+                    <strong>Applications</strong>
+                    <div>Healthcare, Finance, Autonomous Systems</div>
+                </div>
+                <div class="meta-card">
+                    <strong>Timeline</strong>
+                    <div>Ongoing</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="project-content">
+        <!-- Overview -->
+        <section>
+            <h2>Project Overview</h2>
+            <p>As AI systems become increasingly deployed in critical applications, ensuring their security and robustness is paramount. This research develops a comprehensive framework for secure AI deployment, addressing vulnerabilities across the entire machine learning pipeline—from data ingestion to model serving and ongoing maintenance.</p>
+            
+            <p>The framework integrates adversarial robustness, privacy preservation, infrastructure security, and operational monitoring to create end-to-end protection for AI systems in production environments. By addressing security as a first-class requirement rather than an afterthought, we enable trustworthy AI deployment in sensitive domains like healthcare, finance, and autonomous systems.</p>
+        </section>
+
+        <!-- Framework Components -->
+        <section style="margin: 3rem 0;">
+            <h2>Framework Architecture</h2>
+            <div class="security-components">
+                <div class="component-card">
+                    <h3>🛡️ Adversarial Defense</h3>
+                    <p>Real-time detection and mitigation of adversarial attacks against ML models, including evasion, poisoning, and extraction attacks.</p>
+                    <ul>
+                        <li>Adversarial training techniques</li>
+                        <li>Input sanitization and validation</li>
+                        <li>Model hardening and robustness testing</li>
+                        <li>Attack detection algorithms</li>
+                    </ul>
+                </div>
+                
+                <div class="component-card">
+                    <h3>🔒 Privacy Preservation</h3>
+                    <p>Protection of sensitive data and model information through advanced privacy-enhancing technologies.</p>
+                    <ul>
+                        <li>Federated learning implementation</li>
+                        <li>Differential privacy mechanisms</li>
+                        <li>Secure multi-party computation</li>
+                        <li>Homomorphic encryption</li>
+                    </ul>
+                </div>
+                
+                <div class="component-card">
+                    <h3>🏗️ Infrastructure Security</h3>
+                    <p>Hardened deployment environment with comprehensive access controls and monitoring.</p>
+                    <ul>
+                        <li>Container security best practices</li>
+                        <li>Network segmentation and isolation</li>
+                        <li>Identity and access management</li>
+                        <li>Secure API gateways</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Threat Analysis -->
+        <section>
+            <h2>AI Security Threat Analysis</h2>
+            
+            <div class="threat-matrix">
+                <div class="threat-card">
+                    <h4>🤖 Model Evasion</h4>
+                    <p>Adversarial examples designed to cause misclassification</p>
+                    <div style="background: #fee2e2; color: #dc2626; padding: 0.5rem; border-radius: 5px; font-size: 0.8rem; margin-top: 0.5rem;">
+                        High Impact
+                    </div>
+                </div>
+                
+                <div class="threat-card">
+                    <h4>☠️ Data Poisoning</h4>
+                    <p>Malicious training data manipulation</p>
+                    <div style="background: #fef3c7; color: #d97706; padding: 0.5rem; border-radius: 5px; font-size: 0.8rem; margin-top: 0.5rem;">
+                        Medium Impact
+                    </div>
+                </div>
+                
+                <div class="threat-card">
+                    <h4>📤 Model Extraction</h4>
+                    <p>Stealing model parameters through API queries</p>
+                    <div style="background: #fef3c7; color: #d97706; padding: 0.5rem; border-radius: 5px; font-size: 0.8rem; margin-top: 0.5rem;">
+                        Medium Impact
+                    </div>
+                </div>
+                
+                <div class="threat-card">
+                    <h4>🔍 Membership Inference</h4>
+                    <p>Determining if specific data was in training set</p>
+                    <div style="background: #dcfce7; color: #16a34a; padding: 0.5rem; border-radius: 5px; font-size: 0.8rem; margin-top: 0.5rem;">
+                        Low Impact
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Implementation -->
+        <section style="margin: 3rem 0;">
+            <h2>Technical Implementation</h2>
+            
+            <h3>Tools & Technologies</h3>
+            <div class="tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">PyTorch</span>
+                <span class="tech-tag">Adversarial Robustness Toolbox</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">Kubernetes</span>
+                <span class="tech-tag">Linux</span>
+                <span class="tech-tag">SELinux</span>
+                <span class="tech-tag">TensorFlow Privacy</span>
+                <span class="tech-tag">OpenFHE</span>
+            </div>
+
+            <h3>Implementation Phases</h3>
+            
+            <div class="implementation-phase">
+                <h4>Phase 1: Adversarial Robustness</h4>
+                <p>Implemented comprehensive adversarial defense mechanisms including:</p>
+                <ul>
+                    <li>Projected Gradient Descent (PGD) adversarial training</li>
+                    <li>Randomized smoothing for certified robustness</li>
+                    <li>Input preprocessing for attack detection</li>
+                    <li>Model ensemble techniques for improved resilience</li>
+                </ul>
+            </div>
+
+            <div class="implementation-phase">
+                <h4>Phase 2: Privacy-Preserving AI</h4>
+                <p>Developed privacy-enhancing technologies for sensitive applications:</p>
+                <ul>
+                    <li>Federated learning architecture for distributed training</li>
+                    <li>Differential privacy with privacy budget tracking</li>
+                    <li>Secure aggregation protocols for model updates</li>
+                    <li>Encrypted inference capabilities</li>
+                </ul>
+            </div>
+
+            <div class="implementation-phase">
+                <h4>Phase 3: Infrastructure Hardening</h4>
+                <p>Created secure deployment environment with:</p>
+                <ul>
+                    <li>Container image scanning and vulnerability assessment</li>
+                    <li>Network policies and service mesh security</li>
+                    <li>Identity-based access controls</li>
+                    <li>Continuous security monitoring</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Methodology -->
+        <section>
+            <h2>Research Methodology</h2>
+            
+            <div class="methodology-step">
+                <h3>1. Threat Modeling & Risk Assessment</h3>
+                <p>Comprehensive analysis of AI system vulnerabilities across different deployment scenarios:</p>
+                <ul>
+                    <li><strong>STRIDE Analysis:</strong> Systematic threat identification using Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege</li>
+                    <li><strong>Attack Trees:</strong> Hierarchical representation of potential attack vectors</li>
+                    <li><strong>Risk Matrix:</strong> Impact-likelihood assessment for prioritization</li>
+                </ul>
+            </div>
+
+            <div class="methodology-step">
+                <h3>2. Defense Mechanism Development</h3>
+                <p>Iterative development and testing of security controls:</p>
+                <ul>
+                    <li><strong>Adversarial Training:</strong> Training models with adversarial examples to improve robustness</li>
+                    <li><strong>Input Validation:</strong> Sanitization and anomaly detection for incoming data</li>
+                    <li><strong>Model Monitoring:</strong> Continuous assessment of model behavior and performance</li>
+                    <li><strong>Access Controls:</strong> Principle of least privilege for model access</li>
+                </ul>
+            </div>
+
+            <div class="methodology-step">
+                <h3>3. Evaluation & Validation</h3>
+                <p>Rigorous testing of security measures effectiveness:</p>
+                <ul>
+                    <li><strong>Red Team Exercises:</strong> Simulated attacks to test defenses</li>
+                    <li><strong>Security Metrics:</strong> Quantitative assessment of security posture</li>
+                    <li><strong>Performance Impact:</strong> Evaluation of security overhead on system performance</li>
+                    <li><strong>Compliance Verification:</strong> Ensuring adherence to security standards and regulations</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Applications -->
+        <section style="margin: 3rem 0;">
+            <h2>Target Applications</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <div style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                    <h4>🏥 Healthcare AI</h4>
+                    <p>Secure deployment of clinical decision support systems with patient privacy protection and adversarial robustness for medical imaging and diagnosis.</p>
+                </div>
+                <div style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                    <h4>💻 Autonomous Systems</h4>
+                    <p>Robust perception and control systems for autonomous vehicles and robotics with protection against sensor spoofing and environmental manipulation.</p>
+                </div>
+                <div style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                    <h4>🏦 Financial Services</h4>
+                    <p>Secure fraud detection and risk assessment systems with privacy-preserving analytics and protection against evasion attacks.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Current Progress -->
+        <section>
+            <h2>Current Implementation Status</h2>
+            
+            <div style="background: #f0f9ff; padding: 2rem; border-radius: 10px; margin: 1.5rem 0;">
+                <h4>✅ Completed Components</h4>
+                <ul>
+                    <li>Adversarial training framework with PGD and FGSM attacks</li>
+                    <li>Basic federated learning implementation</li>
+                    <li>Container security scanning integration</li>
+                    <li>Model monitoring dashboard</li>
+                </ul>
+            </div>
+
+            <div style="background: #fff7ed; padding: 2rem; border-radius: 10px; margin: 1.5rem 0;">
+                <h4>🔄 In Development</h4>
+                <ul>
+                    <li>Advanced differential privacy mechanisms</li>
+                    <li>Homomorphic encryption for encrypted inference</li>
+                    <li>Automated security testing pipeline</li>
+                    <li>Multi-modal attack detection</li>
+                </ul>
+            </div>
+
+            <div style="background: #fef2f2; padding: 2rem; border-radius: 10px; margin: 1.5rem 0;">
+                <h4>📋 Planned Features</h4>
+                <ul>
+                    <li>Formal verification of model properties</li>
+                    <li>Zero-trust architecture implementation</li>
+                    <li>Quantum-resistant cryptography integration</li>
+                    <li>Cross-silo federated learning</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Future Work -->
+        <section>
+            <h2>Future Research Directions</h2>
+            <ul>
+                <li><strong>Explainable AI Security:</strong> Developing interpretable security measures and attack explanations</li>
+                <li><strong>Automated Defense Generation:</strong> Using AI to automatically generate and adapt security controls</li>
+                <li><strong>Cross-Modal Security:</strong> Extending security frameworks to multi-modal AI systems</li>
+                <li><strong>Real-time Adaptive Defense:</strong> Dynamic security measures that adapt to evolving threats</li>
+                <li><strong>Formal Verification:</strong> Mathematical guarantees of security properties</li>
+            </ul>
+        </section>
+
+        <!-- Resources -->
+        <section style="background: #f8f9fa; padding: 2rem; border-radius: 10px; margin: 3rem 0;">
+            <h3>Project Resources</h3>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1rem;">
+                <a href="https://github.com/osinachix/ai-security-framework" class="btn primary">View Framework Code</a>
+                <a href="../assets/pdf/ai-security-whitepaper.pdf" class="btn secondary">Download Technical Whitepaper</a>
+                <a href="../research.html" class="btn secondary">Research Vision</a>
+            </div>
+        </section>
+
+        <!-- Navigation -->
+        <section style="text-align: center; margin-top: 3rem; padding: 2rem; background: var(--light-color); border-radius: 10px;">
+            <h3>Explore Other Research Projects</h3>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 1rem;">
+                <a href="clinical-ai-bias.html" class="btn secondary">← Clinical AI Bias Research</a>
+                <a href="gesture-recognition.html" class="btn secondary">Gesture Recognition →</a>
+                <a href="../projects.html" class="btn primary">View All Projects</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p>&copy; 2024 Osinachi Mbakamma. Securing AI Systems for Critical Applications.</p>
+                    <p>Wroclaw, Poland | osinachimbakamma@gmail.com</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/osinachix">GitHub</a>
+                    <a href="https://linkedin.com/in/yourprofile">LinkedIn</a>
+                    <a href="https://scholar.google.com/citations?user=YOUR_ID">Google Scholar</a>
+                    <a href="mailto:osinachimbakamma@gmail.com">Email</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Projects - Osinachi Mbakamma | AI Research Scientist</title>
+    <meta name="description" content="Featured research projects in AI, machine learning, cybersecurity, and embedded systems">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Osinachi Mbakamma</h1>
+                    <p class="subtitle">AI Research Scientist | PhD Applicant</p>
+                </div>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="research.html">Research</a>
+                    <a href="projects.html" class="active">Projects</a>
+                    <a href="publications.html">Publications</a>
+                    <a href="cv.html">CV</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Hero Section -->
+        <section class="hero" style="margin-top: 80px; padding: 4rem 0; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+            <div class="hero-content">
+                <h1>Research Projects</h1>
+                <p>Cutting-edge research spanning artificial intelligence, embedded systems, cybersecurity, and real-world applications</p>
+            </div>
+        </section>
+
+        <!-- Featured Projects -->
+        <section class="featured-projects" style="padding: 4rem 0;">
+            <h2>Featured Research Projects</h2>
+            <p class="section-subtitle">Interdisciplinary projects demonstrating innovation in AI theory and practical implementation</p>
+            
+            <!-- Wireless Charging Project -->
+            <div class="project-card" style="margin-bottom: 3rem;">
+                <div class="project-content">
+                    <h3>Machine Learning-Based Optimization of Wireless Charging for Mobile Robot Platforms</h3>
+                    <div class="project-meta">
+                        <span class="status">Research Completed</span>
+                        <span class="technologies">Python, PyTorch, TensorFlow, Gazebo, MATLAB, ANSYS</span>
+                    </div>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 2rem 0;">
+                        <div>
+                            <h4>Abstract</h4>
+                            <p>Developed a novel framework leveraging Convolutional Neural Networks (CNNs), Recurrent Neural Networks (RNNs), Genetic Algorithms (GAs), and Reinforcement Learning (RL) to optimize Wireless Power Transfer (WPT) systems for Mobile Robot Platforms (MRPs). The research addressed challenges of misalignment, environmental variability, and energy inefficiencies through a comprehensive simulation-based architecture.</p>
+                        </div>
+                        <div>
+                            <h4>Key Results</h4>
+                            <ul>
+                                <li><strong>18-22% reduction</strong> in energy loss</li>
+                                <li><strong>21% decrease</strong> in charging time</li>
+                                <li><strong>15% improvement</strong> in alignment stability</li>
+                                <li>Enhanced misalignment tolerance</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h4>Technical Approach</h4>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1rem 0;">
+                        <div style="background: #f8f9fa; padding: 1rem; border-radius: 5px; text-align: center;">
+                            <strong>CNN Architecture</strong>
+                            <p>Spatial pattern analysis for misalignment detection</p>
+                        </div>
+                        <div style="background: #f8f9fa; padding: 1rem; border-radius: 5px; text-align: center;">
+                            <strong>RNN with LSTM</strong>
+                            <p>Temporal dependency modeling</p>
+                        </div>
+                        <div style="background: #f8f9fa; padding: 1rem; border-radius: 5px; text-align: center;">
+                            <strong>Genetic Algorithms</strong>
+                            <p>Coil design optimization</p>
+                        </div>
+                        <div style="background: #f8f9fa; padding: 1rem; border-radius: 5px; text-align: center;">
+                            <strong>Deep Q-Network</strong>
+                            <p>Reinforcement learning for adaptive control</p>
+                        </div>
+                    </div>
+
+                    <h4>Methodology</h4>
+                    <ul>
+                        <li><strong>Simulation Environment:</strong> Gazebo/ROS for MRP movement simulation, MATLAB/Simulink for control systems, ANSYS Maxwell for electromagnetic analysis</li>
+                        <li><strong>Data Collection:</strong> Real-time sensor data including position, coil alignment, battery SoC, and environmental parameters</li>
+                        <li><strong>ML Pipeline:</strong> Comprehensive preprocessing with Kalman filtering and PCA, followed by multi-model decision layer</li>
+                        <li><strong>Validation:</strong> Controlled environment testing with 500W inductive charging setup compliant with SAE J2954 standards</li>
+                    </ul>
+
+                    <div class="project-links">
+                        <a href="projects/wireless-charging.html" class="btn primary">View Detailed Analysis</a>
+                        <a href="https://github.com/osinachix/wireless-charging-ml" class="btn secondary">Source Code</a>
+                        <a href="assets/pdf/wireless-charging-paper.pdf" class="btn secondary">Research Paper</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Clinical AI Bias Project -->
+            <div class="project-card" style="margin-bottom: 3rem;">
+                <div class="project-content">
+                    <h3>Gender Bias in Clinical Language Models</h3>
+                    <div class="project-meta">
+                        <span class="status">Published Research</span>
+                        <span class="technologies">Python, PyTorch, Transformers, BERT, ClinicalBERT, BioBERT</span>
+                    </div>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 2rem 0;">
+                        <div>
+                            <h4>Abstract</h4>
+                            <p>Investigated gender bias in clinical AI systems by comparing domain-specific clinical Large Language Models (LLMs) with general-domain BERT models. The research examined how both types of models inherit and process gender biases from medical data, with implications for equitable healthcare AI applications.</p>
+                        </div>
+                        <div>
+                            <h4>Key Findings</h4>
+                            <ul>
+                                <li>General-domain BERT models were better at inferring gender from clinical notes</li>
+                                <li>Specialized clinical LLMs showed reduced gender bias in symptom-related predictions</li>
+                                <li>Bias exists in both clinical data and model interpretation</li>
+                                <li>Importance of model selection and data preprocessing in healthcare AI</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h4>Research Contributions</h4>
+                    <ul>
+                        <li>Developed methodology for quantifying gender bias in clinical NLP tasks</li>
+                        <li>Compared bias propagation in general vs. domain-specific language models</li>
+                        <li>Highlighted importance of bias-aware AI development in healthcare</li>
+                        <li>Published findings through Neuromatch Academy Impact Scholar Program</li>
+                    </ul>
+
+                    <h4>Citation</h4>
+                    <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 5px; font-style: italic; margin: 1rem 0;">
+                        Shao, Z., Adjekwei, J. A., Safarpoor, M., <strong>Mbakamma, O.E.I.</strong> (2025). "Can AI Doctors Be Fair? Unpacking the Hidden Gender Bias in Large Language Models." Forthcoming in Micropublications - Impact Scholar Program.
+                    </div>
+
+                    <div class="project-links">
+                        <a href="projects/clinical-ai-bias.html" class="btn primary">View Research Details</a>
+                        <a href="https://github.com/osinachix/clinical-ai-bias" class="btn secondary">Analysis Code</a>
+                        <a href="assets/pdf/gender-bias-paper.pdf" class="btn secondary">Publication</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI Security Framework -->
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Secure AI Deployment Framework</h3>
+                    <div class="project-meta">
+                        <span class="status">Active Development</span>
+                        <span class="technologies">Python, Docker, Kubernetes, Linux, PyTorch, Adversarial Robustness</span>
+                    </div>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 2rem 0;">
+                        <div>
+                            <h4>Project Overview</h4>
+                            <p>Developing a comprehensive security framework for AI systems in production environments, focusing on adversarial robustness, privacy preservation, and secure deployment practices. The framework addresses security challenges across the entire ML pipeline from data ingestion to model serving.</p>
+                        </div>
+                        <div>
+                            <h4>Security Focus Areas</h4>
+                            <ul>
+                                <li>Adversarial attack detection and mitigation</li>
+                                <li>Privacy-preserving federated learning</li>
+                                <li>Model integrity verification</li>
+                                <li>Secure multi-tenant deployments</li>
+                                <li>Infrastructure hardening</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h4>Framework Components</h4>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin: 1rem 0;">
+                        <div style="background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%); color: white; padding: 1.5rem; border-radius: 5px; text-align: center;">
+                            <strong>Adversarial Defense</strong>
+                            <p>Real-time attack detection</p>
+                        </div>
+                        <div style="background: linear-gradient(135deg, #4834d4 0%, #686de0 100%); color: white; padding: 1.5rem; border-radius: 5px; text-align: center;">
+                            <strong>Privacy Protection</strong>
+                            <p>Federated learning setup</p>
+                        </div>
+                        <div style="background: linear-gradient(135deg, #00d2d3 0%, #54a0ff 100%); color: white; padding: 1.5rem; border-radius: 5px; text-align: center;">
+                            <strong>Model Security</strong>
+                            <p>Integrity verification</p>
+                        </div>
+                        <div style="background: linear-gradient(135deg, #f368e0 0%, #ff9ff3 100%); color: white; padding: 1.5rem; border-radius: 5px; text-align: center;">
+                            <strong>Infrastructure</strong>
+                            <p>Hardened deployment</p>
+                        </div>
+                    </div>
+
+                    <h4>Current Progress</h4>
+                    <ul>
+                        <li>Implemented adversarial training techniques for improved model robustness</li>
+                        <li>Developed secure model serving architecture with authentication and encryption</li>
+                        <li>Created automated security testing pipeline for ML models</li>
+                        <li>Building federated learning prototype for privacy-sensitive applications</li>
+                    </ul>
+
+                    <div class="project-links">
+                        <a href="projects/ai-security.html" class="btn primary">View Framework Details</a>
+                        <a href="https://github.com/osinachix/ai-security-framework" class="btn secondary">Framework Code</a>
+                        <a href="assets/pdf/ai-security-whitepaper.pdf" class="btn secondary">Technical Whitepaper</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Projects Grid -->
+        <section class="additional-projects" style="padding: 4rem 0; background: var(--light-color);">
+            <div class="container">
+                <h2>Additional Research & Development</h2>
+                <p class="section-subtitle">Smaller projects and technical explorations demonstrating diverse expertise</p>
+                
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h4>Embedded Gesture Recognition System</h4>
+                            <div class="project-meta">
+                                <span class="status">Completed</span>
+                                <span class="technologies">Python, OpenCV, Robotics</span>
+                            </div>
+                            <p>Real-time hand gesture recognition for robotic arm control using RGB and RGB-D algorithms</p>
+                            <div class="project-links">
+                                <a href="projects/gesture-recognition.html" class="btn primary">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h4>Risk Analytics Dashboard</h4>
+                            <div class="project-meta">
+                                <span class="status">Production</span>
+                                <span class="technologies">Tableau, Python, SQL</span>
+                            </div>
+                            <p>Interactive dashboards for operational risk management and financial analytics</p>
+                            <div class="project-links">
+                                <a href="projects/risk-analytics.html" class="btn primary">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h4>Linux ML Infrastructure</h4>
+                            <div class="project-meta">
+                                <span class="status">Ongoing</span>
+                                <span class="technologies">Linux, Docker, Bash</span>
+                            </div>
+                            <p>Hardened infrastructure setup for secure machine learning deployment and operations</p>
+                            <div class="project-links">
+                                <a href="projects/ml-infrastructure.html" class="btn primary">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p>&copy; 2024 Osinachi Mbakamma. Innovative Research in AI Systems.</p>
+                    <p>Wroclaw, Poland | osinachimbakamma@gmail.com</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/osinachix">GitHub</a>
+                    <a href="https://linkedin.com/in/yourprofile">LinkedIn</a>
+                    <a href="https://scholar.google.com/citations?user=YOUR_ID">Google Scholar</a>
+                    <a href="mailto:osinachimbakamma@gmail.com">Email</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
