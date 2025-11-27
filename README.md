@@ -56,7 +56,7 @@ osinachix.github.io/
 
 <div align="center">
 
-*Open to PhD opportunities and research collaborations in Trustworthy AI Systems*
+*Open to PhD opportunities and research collaborations in AI*
 
 [![Visitors](https://komarev.com/ghpvc/?username=osinachix&label=Portfolio%20Visitors&color=blue)](https://github.com/osinachix)
 
