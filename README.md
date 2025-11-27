@@ -4,7 +4,7 @@
 
 ![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-success)
 ![Status](https://img.shields.io/badge/Status-Active-blue)
-![PhD Applicant](https://img.shields.io/badge/Role-PhD%20Applicant-orange)
+![PhD Applicant](https://img.shields.io/badge/Role-AI%20Enthusiast-orange)
 
 **🌐 Professional research portfolio website for Osinachi Mbakamma**
 
